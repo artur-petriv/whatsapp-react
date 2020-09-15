@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./Login";
+import { useStateValue } from "./StateProvider";
+
 import "./App.css";
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{ user }, dispatch] = useStateValue();
 
   return (
     <div className="app">
       {!user ? (
-        <h1>Login</h1>
+        <Login />
       ) : (
         <div className="app__body">
           <Router>
