@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "./Sidebar";
 import "./App.css";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="app">
       <h1>Whatsapp App</h1>
       <div className="app__body">
-        {/* Sidebar */}
+        <Sidebar />
         {/* Chat */}
       </div>
     </div>
