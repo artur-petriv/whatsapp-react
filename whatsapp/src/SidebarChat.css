@@ -25,3 +25,8 @@
   color: #6d6d6d;
   user-select: none;
 }
+
+.sidebar__chats > a {
+  text-decoration: none;
+  color: #000;
+}
